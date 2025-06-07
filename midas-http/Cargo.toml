@@ -1,0 +1,16 @@
+[package]
+edition = "2024"
+name = "midas-http"
+version = "0.1.0"
+
+[dependencies]
+tokio = { version = "1.0", features = ["full"] }
+axum = "0.7"
+chrono = "*"
+midas-core = { path = "../midas-core" }
+num_cpus = "1.13"  # 确保num_cpus依赖存在
+serde = {version = "*", features = ["derive"]}
+anyhow = "*"
+tower-http = {version = "*", features = ["cors"]}
+tracing = "*"
+tracing-subscriber = "*"

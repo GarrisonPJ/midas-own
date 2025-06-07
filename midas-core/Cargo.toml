@@ -1,0 +1,26 @@
+[package]
+edition = "2024"
+name = "midas-core"
+version = "0.1.0"
+
+
+[dependencies]
+qwest = { version = "0.11", features = ["json"] }
+lapin = "2.15"
+tokio-stream = "0.1"
+futures = "0.3"
+tokio = { version = "1.0", features = ["full"] }
+chrono = "*"
+rayon = "*"
+serde = { version = "*", features = ["derive"] }
+serde_json = "*"
+tracing = "*"
+sysinfo = "0.35.0"
+
+[dev-dependencies]
+criterion = { version = "0.5", features = ["html_reports"] }
+cmake = "0.1.54"
+
+[[bench]]
+name = "benchmark"
+harness = false

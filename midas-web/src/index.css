@@ -1,0 +1,18 @@
+@import "./dark.min.css";
+
+body {
+  font-family: Monaco;
+}
+
+:root {
+  --background-body: black;
+  --background-alt: black;
+}
+
+.profit {
+  color: green;
+}
+
+.loss {
+  color: red;
+}
